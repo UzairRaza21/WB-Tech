@@ -1252,10 +1252,7 @@ footer{
     height: 450px;
     padding-top: 5%;
 }
-/* .footer-privacy-and-policy{
-    flex-direction: row !important;
-    gap: 40px !important;
-} */
+
 .footer-logo-section{
     width: 15%;
     height: 300px;
@@ -1292,13 +1289,23 @@ footer{
 
 .footer-bottom{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     border-top: 2px dashed var(--para-color);
+    align-items: center;
+    padding: 10px 0;
 }
 .footer-bottom p{
-    padding: 10px 0;
     color: var(--para-color);
     font-size: 16px;
+}
+
+.footer-privacy-and-policy{
+    display: flex;
+    gap: 30px;
+}
+.footer-privacy-and-policy a{
+    font-size: 14px;
+    color: var(--para-color);
 }
 
 

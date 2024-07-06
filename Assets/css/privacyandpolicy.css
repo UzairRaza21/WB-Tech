@@ -26,5 +26,65 @@
 .privacy-section p{
     color: var(--para-color);
     font-size: var(--para-font-size-1920px);
-    
+    padding-block: 10px;
+}
+
+.privacy-section h4{
+    color: var(--heading-color);
+    padding-block: 15px;
+    font-size: 20px;
+}
+.privacy-section h5{
+    color: var(--heading-color);
+    padding-block: 12px;
+    font-size: 18px;
+}
+.privacy-section{
+    padding-inline: 20px;
+    max-width: 80%;
+    padding-block: 30px;
+}
+
+.privacy-section ul{
+    list-style-position: inside;
+}
+
+@media screen and (max-width: 1440px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-1440px);
+        padding-block: 10px;
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-1440px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-1024px);
+        padding-block: 10px;
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-1024px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-768px);
+        padding-block: 10px;
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-768px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .privacy-section p{
+        font-size: var(--para-font-size-425px);
+        padding-block: 10px;
+    }
+    .privacy-section ul{
+        font-size: var(--para-font-size-425px);
+    }
 }
