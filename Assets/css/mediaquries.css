@@ -2022,6 +2022,10 @@ footer{
         }
     }
 
+    .footer-bottom{
+        flex-direction: column;
+    }
+
     /* About Section */
 
 .about-company-inner{
