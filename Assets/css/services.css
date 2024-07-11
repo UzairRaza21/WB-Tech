@@ -34,7 +34,7 @@
     font-weight: 400;
     color: var(--heading-color);
 }
-
+ 
 .services-heading-img img{
     width: 100%;
 }
@@ -69,7 +69,7 @@
     margin: 0 auto;
     border-radius: 40px;
     background-color: white;
-    height: 600px;
+    height: 500px;
     box-shadow: 0px 28px 39.8px -4px rgba(28, 40, 75, 0.28);
 }
 .service-webdev-section-2-inner{
@@ -77,6 +77,9 @@
     gap: 20px;
     padding-block: 20px;
     align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 70%;
 }
 .service-webdev-section-2-text{
     flex-basis: 50%;
@@ -85,32 +88,32 @@
     flex-basis: 50%;
 }
 .service-webdev-section-2-img img{
-    width: 80%;
+    width: 100%;
 }
 .service-webdev-section-2-text h2{
     color: var(--heading-color);
     font-size: var(--main-font-size-1920px);
     font-weight: 400;
     text-transform: uppercase;
-    width: 60%;
+    width: 100%;
 }
 .service-webdev-section-2-text p{
     color: var(--para-color);
     font-size: var(--para-font-size-1920px);
     margin-top: 15px;
-    width: 60%;
+    width: 100%;
 }
 
 .service-webdev-section-3{
     background-color: white;
-    border-radius: 100px 100px 0 0;
+    border-radius: 80px 80px 0 0;
     height: 1000px;
     margin-top: 100px;
 }
 
 .service-webdev-section-3-innerbox{
     height: 600px;
-    width: 60%;
+    width: 66.5%;
     border-radius: 60px;
     background-color: rgb(76, 76, 103);
     margin: 80px auto;
@@ -392,7 +395,8 @@
     font-size: var(--main-font-size-1920px);
     text-transform: uppercase;
     font-weight: 400;
-    width: 35%;
+    width: 100%;
+    margin-left: 25px;
 }
 
 
