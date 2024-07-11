@@ -300,13 +300,12 @@
 .service-webdev-section-2-text h2 {
     font-size: var(--main-font-size-1440px) !important;
 }
+
 .services-graphic-section-6-text h2 {
     font-size: var(--main-font-size-1440px) !important;
-    width: 50%;
 }
 .services-graphic-section-6-text p {
     font-size: var(--para-font-size-1440px) !important;
-    width: 75%;
 }
 .service-section-3-left h2 {
     font-size: var(--main-font-size-1440px) !important;
@@ -319,12 +318,7 @@
     margin-left: 125px !important;
     font-size: var(--main-font-size-1440px) !important;
 }
-.services-graphic-section-6-text{
-    margin-inline: 100px;
-}
-.services-graphic-section-6-text h2 {
-    width: 65% !important;
-}
+
 
 .service-webdev-section-5 {
     height: 800px !important;
@@ -332,6 +326,10 @@
 
 .service-webdev-section-5-inner h2 {
     margin: 60px auto !important;
+}
+
+.services-graphic-section-6-inner {
+    width: 80% !important;
 }
 /* Services Animation Inner page  */
 .services-animation-section-inner h2 {
@@ -892,22 +890,31 @@
 .service-section-3-right p {
     width: 80%;
     font-size: var(--para-font-size-1024px);
- 
 }
 .service-graphic-section-3 {
     height: 650px !important;
 }
-.services-graphic-section-6-text h2 {
+
+.services-graphic-section-6{
+    height: 400px !important;
+}
+
+.services-graphic-section-6-text{
+    height: 400px !important;
+    flex-basis: 50%;
+}
+.services-graphic-section-6-img{
+    flex-basis: 50%;
+}
+.services-graphic-section-6-text h2{
     font-size: var(--main-font-size-1024px) !important;
-    width: 80% !important;
+    height: 200px !important;
 }
-.services-graphic-section-6-text p {
+.services-graphic-section-6-text p{
     font-size: var(--para-font-size-1024px) !important;
+    height: 200px !important;
 }
-.services-graphic-section-6 {
-    padding-block: 80px !important;
-    padding-inline: 80px;
-}
+
 
 /* About Page */
 .about-left-text h2 {
@@ -937,6 +944,7 @@
     font-size: var(--main-font-size-1024px) !important;
 }
 
+
 /* Services Animation Page */
 .service-animation-section-3 {
     height: 250px !important;
@@ -961,21 +969,7 @@
     font-size: var(--main-font-size-1024px) !important;
 
 }
-.services-graphic-section-6-text {
-    margin-inline: 10px !important;
-}
-.services-graphic-section-6-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 450px !important;
-}
-.services-graphic-section-6 {
-    height: 600px !important;
-    background: linear-gradient(180deg, var(--heading-color) 50%, white 50%);
-}
+
 
 }
 @media screen and (max-width: 768px) {
@@ -1675,28 +1669,11 @@ footer{
 }
 
 
-.services-graphic-section-6-text h2 {
-    font-size: var(--main-font-size-768px) !important;
-    width: 100% !important;
-    text-align: center;
-}
-.services-graphic-section-6-text p {
-    font-size: var(--para-font-size-768px) !important;
-    width: 80% !important;
-    text-align: center;
-    margin: 0 auto;
-}
-.services-graphic-section-6 {
-    padding-block: 50px !important;
-    padding-inline: 20px;
-}
-.services-graphic-section-6-inner {
-    flex-direction: column;
-}
-.services-graphic-section-6 {
-    height: auto !important;
-    padding-block: 100px;
-}
+
+
+
+
+
 .service-graphic-section-3 {
     height: 450px !important;
 }
@@ -1774,18 +1751,8 @@ footer{
     height: 80vh !important;
 }
 
-.services-graphic-section-6-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 450px !important;
-}
-.services-graphic-section-6 {
-    height: 600px !important;
-    background: linear-gradient(180deg, var(--heading-color) 50%, white 50%);
-}
+
+
 .service-section-3-left h2 {
     font-size: var(--main-font-size-768px) !important;
     width: 80% !important;
@@ -1798,31 +1765,28 @@ footer{
     height: 395px !important;
 }
 
-
 .services-graphic-section-6{
-    height: 800px !important;
-    background: linear-gradient(180deg, var(--heading-color) 50%, white 50%);
+    height: 400px !important;
 }
 
-.services-graphic-section-6-inner{
-    gap: 180px !important;
-    height: auto !important;
-    flex-direction: column;
+.services-graphic-section-6-text{
+    height: 400px !important;
+    flex-basis: 50%;
 }
-
+.services-graphic-section-6-img{
+    flex-basis: 50%;
+}
 .services-graphic-section-6-text h2{
     font-size: var(--main-font-size-768px) !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-top: 80px !important;
+    height: 200px !important;
+    padding-top: 50px !important;
+}
+.services-graphic-section-6-text p{
+    font-size: var(--para-font-size-768px) !important;
+    height: 200px !important;
+    padding-top: 50px !important;
 }
 
-.services-graphic-section-6-text p{
-    color: white !important;
-    font-size: var(--para-font-size-768px) !important;
-    width: 75%;
-    height: auto !important;
-}
 
 
 .carousel-wrap {
@@ -2643,14 +2607,35 @@ footer{
     width: 75% !important;
 }
 
-.services-graphic-section-6-text h2 {
+.services-graphic-section-6{
+    height: 600px !important;
+}
+.services-graphic-section-6-inner{
+    height: 600px !important;
+    flex-direction: column;
+}
+.services-graphic-section-6-text{
+    height: auto !important;
+    flex-basis: 50%;
+    text-align: center;
+    justify-content: center;
+}
+.services-graphic-section-6-img{
+    flex-basis: 50%;
+    padding-top: 100px;
+}
+.services-graphic-section-6-text h2{
     font-size: var(--main-font-size-425px) !important;
-    width: 100% !important;
+    height: auto !important;
+    padding-top: 0px !important;
 }
-.services-graphic-section-6-text p {
+.services-graphic-section-6-text p{
     font-size: var(--para-font-size-425px) !important;
-    width: 80% !important;
+    height: auto !important;
+    padding-top: 0px !important;
+    color: white !important;
 }
+
 
 .service-graphic-section-3-innerbox {
     height: 350px !important;
@@ -2679,33 +2664,10 @@ footer{
     font-size: var(--main-font-size-425px) !important;
 }
 
-.services-graphic-section-6{
-    height: 800px !important;
-    background: linear-gradient(180deg, var(--heading-color) 50%, white 50%);
-}
 
-.services-graphic-section-6-inner{
-    gap: 180px !important;
-    height: auto !important;
-    flex-direction: column;
-}
 
-.services-graphic-section-6-text h2{
-    font-size: var(--main-font-size-768px) !important;
-    width: 100% !important;
-    height: auto !important;
-    margin-top: 80px !important;
-}
 
-.services-graphic-section-6-text p{
-    color: white !important;
-    font-size: var(--para-font-size-768px) !important;
-    width: 75%;
-    height: auto !important;
-}
-.services-graphic-section-6-img img{
-    width: 100%;
-}
+
 
 
 /* ABOUT PAGE  */
