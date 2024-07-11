@@ -307,14 +307,14 @@
 
 .service-graphic-section-3{
     background-color: white;
-    border-radius: 100px 100px 0 0;
+    border-radius: 80px 80px 0 0;
     height: 750px;
     margin-top: 100px;
 }
 
 .service-graphic-section-3-innerbox{
     height: 400px;
-    width: 90%;
+    width: 68%;
     border-radius: 100px;
     background-color: rgb(76, 76, 103);
     margin: 80px auto;
@@ -354,10 +354,15 @@
 }
 
 .services-graphic-section-6{
-    height: 580px;
+    height: 500px;
     background: linear-gradient(180deg, var(--heading-color) 50%, white 50%);
+    box-sizing: border-box;
 }
-
+.services-graphic-section-6-text{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
 .services-graphic-section-6-inner{
     display: flex;
     justify-content: center;
@@ -372,16 +377,19 @@
     font-size: var(--main-font-size-1920px);
     font-weight: 400;
     text-transform: uppercase;
-    width: 50%;
+    width: 80%;
     height: 250px;
-    margin-top: 80px;
+    align-self: center;
+    padding-top: 62.5px;
 }
 
 .services-graphic-section-6-text p{
     color: var(--para-color);
     font-size: var(--para-font-size-1920px);
-    width: 75%;
+    width: 80%;
     height: 250px;
+    align-self: center;
+    padding-top: 62.5px;
 }
 
 .service-working-process-section{
