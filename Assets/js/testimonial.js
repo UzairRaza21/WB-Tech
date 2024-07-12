@@ -1,110 +1,59 @@
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const slides = document.querySelectorAll('.slider-slide');
-const totalSlides = slides.length;
-let index = 0;
-let autoplay;
+var testiomnialData = [
+    {
+        name: "GABRIEL",
+        review: "I wanted to share my experience of working with WB Soft Tech, who designed the landing page for my agency. He did an excellent job in its construction. I must commend his patience and attentiveness to my instructions throughout the process. I requested several adjustments to the site—about 6-7 times—and he accommodated each change calmly and professionally without any sign of frustration."
+    },
+    {
+        name: "WILLIAM BUTLER",
+        review: "WB Soft Tech prioritizes customer satisfaction and product quality above all else. My experience working with their team has been exceptional, and I eagerly anticipate expanding my business ventures further based on their patience and consistently high-quality results."
+    },
+    {
+        name: "CAMERON EVANS",
+        review: "This company goes above and beyond to support you from the very beginning! They are incredibly helpful and friendly, taking the time to discuss business ideas, website design and development, marketing strategies, and more. I'm grateful to have them on my team!"
+    },
+    {
+        name: "DANIELLE LOVEJOY",
+        review: "As a small business owner, I had delayed building my site for years. From the moment they contacted me, their communication was clear, professional, and perfectly explained. The Lead Developer, Sven, guided me through every step with patience and expertise"
+    },
+    {
+        name: "CAMERON EVANS",
+        review: "This company goes above and beyond to support you from the very beginning! They are incredibly helpful and friendly, taking the time to discuss business ideas, website design and development, marketing strategies, and more. I'm grateful to have them on my team!"
+    },
+    {
+        name: "CAMERON EVANS",
+        review: "This company goes above and beyond to support you from the very beginning! They are incredibly helpful and friendly, taking the time to discuss business ideas, website design and development, marketing strategies, and more. I'm grateful to have them on my team!"
+    },
+    {
+        name: "CAMERON EVANS",
+        review: "This company goes above and beyond to support you from the very beginning! They are incredibly helpful and friendly, taking the time to discuss business ideas, website design and development, marketing strategies, and more. I'm grateful to have them on my team!"
+    },]
+var slideHolder = document.querySelector("#slideHolder")
+for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
 
-function updateSlides() {
-    const offset = -(index * (100 / 3 + 0.5)); // Adding gap percentage
-    sliderWrapper.style.transform = `translateX(${offset}%)`;
-    slides.forEach(slide => slide.classList.remove('slider-slide-center', 'active', 'slider-slide-adjacent'));
-    if (slides[index + 1]) {
-        slides[index + 1].classList.add('slider-slide-center');
-    }
+const swiper = new Swiper('#craouselContainer', {
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2.3,
+    loop: true,
+    spaceBetween: 30,
+    effect: "coverflow",
+    coverflowEffect: {
+        rotate: 0,
+        depth: 800,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+    autoplay: { delay: 1000 }
+});
+window.onresize = queryResizer
+queryResizer()
+function queryResizer() {
+    if (window.innerWidth < 724) swiper.params.slidesPerView = 2
+    if (window.innerWidth > 501) swiper.params.slidesPerView = 2
+    if (window.innerWidth > 724) swiper.params.slidesPerView = 2.3
+    if (window.innerWidth < 501) swiper.params.slidesPerView = 1
+    swiper.update()
 }
-
-function nextSlide() {
-    index++;
-    sliderWrapper.style.transition = 'transform 0.5s ease';
-    updateSlides();
-    if (index === totalSlides - 3) {
-        setTimeout(() => {
-            sliderWrapper.style.transition = 'none';
-            index = 0;
-            updateSlides();
-        }, 500);
-    }
-}
-
-function prevSlide() {
-    index--;
-    if (index < 0) {
-        index = totalSlides - 4;
-        sliderWrapper.style.transition = 'none';
-        updateSlides();
-    } else {
-        sliderWrapper.style.transition = 'transform 0.5s ease';
-        updateSlides();
-    }
-}
-
-function toggleActiveSlide(event) {
-    const activeSlide = document.querySelector('.slider-slide-center');
-    if (activeSlide) {
-        const adjacentSlides = [slides[index], slides[index + 2]];
-        activeSlide.classList.toggle('active');
-        adjacentSlides.forEach(slide => slide.classList.toggle('slider-slide-adjacent'));
-        if (activeSlide.classList.contains('active')) {
-            clearInterval(autoplay);
-        } else {
-            autoplay = setInterval(nextSlide, 5000);
-        }
-    }
-}
-
-// function startAutoplay() {
-//     autoplay = setInterval(nextSlide, 2500);
-// }
-
-document.addEventListener('click', (event) => {
-    const isClickInside = document.querySelector('.slider-container').contains(event.target);
-    if (!isClickInside) {
-        const activeSlide = document.querySelector('.slider-slide-center.active');
-        if (activeSlide) {
-            activeSlide.classList.remove('active');
-            const adjacentSlides = [slides[index], slides[index + 2]];
-            adjacentSlides.forEach(slide => slide.classList.remove('slider-slide-adjacent'));
-            startAutoplay();
-        }
-    }
-});
-
-document.querySelector('.slider-container').addEventListener('mousedown', (e) => {
-    clearInterval(autoplay);
-    let startX = e.pageX;
-    sliderWrapper.style.transition = 'none';
-
-    function onMouseMove(e) {
-        let moveX = e.pageX - startX;
-        sliderWrapper.style.transform = `translateX(calc(-${(index * (100 / 3 + 1.666))}% + ${moveX}px))`;
-    }
-
-    function onMouseUp() {
-        sliderWrapper.style.transition = 'transform 0.5s ease';
-        document.removeEventListener('mousemove', onMouseMove);
-        document.removeEventListener('mouseup', onMouseUp);
-        autoplay = setInterval(nextSlide, 5000);
-    }
-
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
-});
-
-document.querySelector('.nav-button-right').addEventListener('click', () => {
-    clearInterval(autoplay);
-    prevSlide();
-    autoplay = setInterval(nextSlide, 5000);
-});
-
-document.querySelector('.nav-button-left').addEventListener('click', () => {
-    clearInterval(autoplay);
-    nextSlide();
-    autoplay = setInterval(nextSlide, 5000);
-});
-
-document.querySelectorAll('.slider-slide').forEach(slide => {
-    slide.addEventListener('click', toggleActiveSlide);
-});
-
-updateSlides();
-startAutoplay();
