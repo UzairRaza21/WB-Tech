@@ -213,6 +213,8 @@
     width: 100%;
 }
 
+
+
 .websites-cart-section {
     display: flex;
     flex-wrap: wrap;
@@ -309,10 +311,14 @@
 }
 .service-section-3-left h2 {
     font-size: var(--main-font-size-1440px) !important;
-    width: 60% !important;
+    width: 80% !important;
+}
+.service-graphic-section-3 {
+    height: 750px !important;
 }
 .service-graphic-section-3-innerbox {
-    width: 85% !important;
+    width: 75% !important;
+    height: 350px !important;
 }
 .service-working-process-section-inner h2 {
     margin-left: 125px !important;
@@ -490,7 +496,12 @@
     margin: 3% auto;
     width: 100%;
 }
-
+.working-process-slider .slide-text h1 {
+    font-size: 24px !important;
+}
+.working-process-slider .slide-text p {
+    font-size: 16px !important;
+}
         /* About Company Section */
 
 .about-company-heading h1{
@@ -878,11 +889,14 @@
 
 .service-graphic-section-3-innerbox{
     height: 300px !important;
+    border-radius: 80px !important;
+    width: 85% !important;
+    top: 15% !important;
 }
 
 .service-section-3-left h2 {
     font-size: var(--main-font-size-1024px) !important;
-    width: 60% !important;
+    width: 75% !important;
 }
 .service-section-3-right {
     padding-inline: 0px !important;
@@ -891,10 +905,17 @@
     width: 80%;
     font-size: var(--para-font-size-1024px);
 }
+
 .service-graphic-section-3 {
-    height: 650px !important;
+    height: 450px !important;
+    border-radius: 60px 60px 0 0 !important;
+    margin-top: 80px !important;
 }
 
+.service-graphic-cart {
+    margin-top: 50px !important;
+    width: 270px !important;
+}
 .services-graphic-section-6{
     height: 400px !important;
 }
@@ -1310,7 +1331,41 @@
     font-size: 24px;
 }
 
-        
+ 
+/* Our Workflow */
+.working-process-slider {
+    gap: 10px;
+    padding: 0px 80px 0px 80px;
+}
+.working-process-slider .slider {
+    width: 70%;
+    height: 200px;
+}
+.working-process-button{
+    width: 25%;
+    height: 200px ;
+}
+.working-process-slider .slide-text h1 {
+    font-size: 22px !important;
+}
+.working-process-slider .slide-text p {
+    font-size: 14px !important;
+}
+.working-process-slider .slide-text{
+    width: 75%;
+    padding: 50px;
+    gap: 10px;
+}
+.working-process-slider .slide-img{
+    width: 25%;
+    height: 200px;
+}
+.working-process-slider .slide-img img {
+    width: 100%;
+    height: 75%;
+    right: 0%;
+    top: 13%;
+}
 footer{
     background-image: url(../Images/Home/footer-bg.png);
     background-repeat: no-repeat;
@@ -1804,7 +1859,7 @@ footer{
 }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:430px) {
 
     .nav-inner{
         padding: 0 20px;
@@ -1847,6 +1902,7 @@ footer{
 
     .hero-home-slide-3-text{
         flex-basis: 100%;
+        margin-inline: 80px;
     }
     .hero-home-slide-3-text h1{
         font-size: 30px;
@@ -1884,9 +1940,7 @@ footer{
 
     /* Slide 3 */
 
-.hero-home-slide-3-text{
-        flex-basis: 50%;
-    }
+
 .hero-home-slide-3-text h1{
         font-size: 30px;
         line-height: 30px;
@@ -1894,7 +1948,38 @@ footer{
         width: 100%;
     }
 
-.slide-3-img-1 img{
+    .slide-3-img-1 img{
+        display: none;
+    }
+    .slide-3-img-2 img {
+        display: none;
+    }
+    .slide-3-img-3 img {
+        display: none;
+    }
+    .slide-3-img-4 img {
+        display: none;
+    }
+    .slide-3-img-5 img {
+        display: none;
+    }
+    .slide-3-banner-img-1 img{
+        display: none;
+    }
+    .slide-3-banner-img-2 img{
+        display: none;
+    }
+    .slide-3-banner-img-3 img{
+        display: none;
+    }
+    .slide-3-banner-img-4 img{
+        display: none;
+    }
+    .slide-3-banner-img-5 img{
+        display: none;
+    }
+
+/* .slide-3-img-1 img{
         transform: translate(-90px, 0px);
         width: 140%;
     }
@@ -1955,7 +2040,7 @@ footer{
     }
 }
     /* --------------------------------------------- */
-    .slide-3-banner-img-1 img{
+    /* .slide-3-banner-img-1 img{
         transform: translate(31px, 15px);
         width: 140%;
     }
@@ -2019,7 +2104,7 @@ footer{
         100%{
             transform: translate(-149px, -831px);
         }
-    }
+    } */ */
 
     .footer-bottom{
         flex-direction: column;
@@ -2146,9 +2231,9 @@ footer{
 .working-process-slider {
     width: 100%;
     justify-content: space-between;
-    gap: 20px;
+    gap: 60px;
     margin: 10% auto;
-    padding: 0px 60px 0px 60px;
+    padding: 70px 60px 70px 60px;
     flex-direction: column;
 }
 .working-process{
@@ -2163,21 +2248,17 @@ footer{
 .working-process-button{
     width: 100%;
     height: 250px ;
-    perspective: 800px;
-    position: relative;
 }
 
 .working-process-slider .slide-img{
     width: 25%;
-    position: relative;
     height: 300px;
 }
 .working-process-slider .slide-img img {
     width: 100%;
-    position: absolute;
-    height: 60%;
+    height: 50%;
     right: 0%;
-    top: 20%;
+    top: 28%;
 }
 
 .working-process-slider .slide-text{
@@ -2586,6 +2667,11 @@ footer{
     width: 280px !important;
     margin-top: 0 !important;
 }
+.service-graphic-cart {
+    margin-top: 20px !important;
+    width: 275px !important;
+    height: 355px !important;
+}
 .service-webdev-section-5 {
     height: auto !important;
 }
@@ -2636,7 +2722,10 @@ footer{
     color: white !important;
 }
 
-
+.service-graphic-section-3 {
+    height: 450px !important;
+    margin-top: 0px !important;
+}
 .service-graphic-section-3-innerbox {
     height: 350px !important;
 }
@@ -2646,10 +2735,7 @@ footer{
 }
 .service-section-3-left h2 {
     font-size: var(--main-font-size-425px) !important;
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
-    width: 80% !important;
+    width: 50% !important;
 }
 .service-section-3-right {
     width: 50% !important;
@@ -2660,9 +2746,7 @@ footer{
     font-size: 10px !important;
 }
 
-.service-section-3-left h2 {
-    font-size: var(--main-font-size-425px) !important;
-}
+
 
 
 
@@ -2755,8 +2839,10 @@ footer{
     }
 
         /* Slide 3 */
+
 .hero-home-slide-3-text{
-        flex-basis: 50%;
+    flex-basis: 100%;
+    margin-inline: 80px;
     }
 .hero-home-slide-3-text h1{
         font-size: 25px;
@@ -2856,6 +2942,10 @@ footer{
     width: 70%!important;
 }
 
+.service-graphic-cart {
+    width: 275px !important;
+    height: 315px !important;
+}
 /* Contact Hero Heading */
 .contact-heading{
     margin-left: 80px;
@@ -2900,7 +2990,8 @@ footer{
 }
 .hero-home-slide-3-text{
     flex-basis: 100%;
-}
+    margin-inline: 20px;
+ }
 .hero-home-slide-3-text h1{
     width: 75%;
 }
@@ -2949,6 +3040,55 @@ footer{
 }
 
 
+
+/* Working Process */
+
+.working-process-slider {
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 10% auto;
+    padding: 70px 60px 70px 60px;
+    flex-direction: column;
+}
+.working-process{
+    margin: 10% auto 15% auto;
+    height: auto;
+}
+.working-process-slider .slider {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+.working-process-button{
+    width: 100%;
+    height: 230px ;
+}
+
+.working-process-slider .slide-img{
+    width: 25%;
+    height: 200px;
+}
+.working-process-slider .slide-img img {
+    width: 100%;
+    height: 50%;
+    right: 0%;
+    top: 30%;
+}
+
+.working-process-slider .slide-text{
+    width: 75%;
+    padding: 40px 10px 35px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.working-process-slider .slide-text h1{
+    font-size: 16px !important;
+}
+.working-process-slider .slide-text p{
+    font-size: 12px !important;
+}
 /* Portfolio Page Start */
 
 .portfolio-header-bg {
@@ -3022,6 +3162,9 @@ footer{
 
 .portfolio-page-carts {
     margin: -150px auto 100px auto !important;
+}
+.service-graphic-cart {
+    height: 250px !important;
 }
 
     /* Packages -Web Developement Page */
