@@ -427,6 +427,13 @@
      color: var(--para-color);
      font-size: 15px;
   }
+
+  .slick-slider {
+    margin: auto;
+    width: 60%;
+  }
+
+
 }
 
 
@@ -640,18 +647,13 @@
 .testimonial-heading {
     padding: 0% 100px 0% 120px;
         }
-
-.testimonial-slider .slider-wrapper {
-    gap: 30px;
-        }
-.testimonial-slider .nav-button-right {
-    right: 3%;
-    }
-.testimonial-slider .nav-button-left {
-    left: 2%;
-    }
-
-
+.dash-ads-slider{
+    padding-top: 220px;
+}
+.slick-slider {
+    margin: auto;
+    width: 70%;
+}
 
     
 .footer-inner{
@@ -1447,6 +1449,11 @@
 #detail-title{
     font-size: 24px;
 }
+
+  .slick-slider {
+    margin: auto;
+    width: 80%;
+  }
 
  
 /* Our Workflow */
@@ -2329,51 +2336,90 @@ footer{
 #detail-description {
     font-size: var(--para-font-size-425px);
 }
-
+/* 3D Slider Start*/
 .myPanels{
-    perspective: 8000px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    perspective: 1500px;
   }
   #carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
     transform-style: preserve-3d;
-    perspective: 20000px;
+    perspective: 10000px;
+  
   }
   #carousel .pane{
-
+    margin: 0px;
+    display: block;
+    position: absolute;
     width: 180px;
     height: 350px;
     left: 10px;
     top: 10px;
+    border-radius: 30px;
   }
-  
-  .buttons{
-    margin-top: 60px;
-  }
-  
   /* Custom Changes */
-
+.slider-3D-card{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.slider-3D-img{
+    background-size: 65%;
+    transform: translateY(25px);
+    height: 145px;
+}
 .slider-3D-img img{
-    width: 50%;
-    margin: 15px;
+    width: 40%;
+    margin: 30px;
 }
 .slider-3D-text{
     padding: 30px 10px 10px 10px;
     gap: 10px;
 }
 .slider-3D-text h1{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
 }
 .slider-3D-text p{
-    font-size: 10px;
-    padding: 0 10px;
+    font-size: 11px;
+    padding: 0 8px;
 }
-.learn-more{
-    color: var(--heading-color);
-    font-weight: 400;
+
+.learn-circle{
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0px 10px ;
 }
-.slider-3D-text h2{
-    font-size: 12px;
+.learn-circle img{
+    width: 10%;
+    padding: 8px 4px 0px 4px;
 }
+
+.slider-3d-buttons{
+    position: relative;
+    margin-top: -60px;
+}
+.slider-3d-buttons .fa-chevron-left{
+    position: absolute;
+    left: -50%;
+    padding: 10px 12px;
+
+    font-size: 22px;
+}
+.slider-3d-buttons .fa-chevron-right{
+    position: absolute;
+    right: -50%;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+
+/* 3D Slider End */
+
 
 /* Working Process */
 .working-process-heading{
@@ -3269,6 +3315,91 @@ footer{
      color: var(--para-color);
      font-size: 14px !important;
 }
+
+/* 3D Slider Start*/
+.myPanels{
+    width: 165px;
+    height: 250px;
+    position: relative;
+    perspective: 1500px;
+  }
+  #carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+  
+  }
+  #carousel .pane{
+    margin: 0px;
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 310px;
+    left: 10px;
+    top: 10px;
+    border-radius: 30px;
+  }
+  /* Custom Changes */
+.slider-3D-card{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.slider-3D-img{
+    background-size: 65%;
+    transform: translateY(30px);
+    height: 100px;
+}
+.slider-3D-img img{
+    width: 40%;
+    margin: 15px;
+}
+.slider-3D-text{
+    padding: 30px 10px 10px 10px;
+    gap: 10px;
+}
+.slider-3D-text h1{
+    font-size: 13px;
+    line-height: 16px;
+}
+.slider-3D-text p{
+    font-size: 10px;
+    padding: 0 8px;
+}
+
+.learn-circle{
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0px 10px ;
+}
+.learn-circle img{
+    width: 10%;
+    padding: 8px 4px 0px 4px;
+}
+
+.slider-3d-buttons{
+    position: relative;
+    margin-top: -100px;
+}
+.slider-3d-buttons .fa-chevron-left{
+    position: absolute;
+    left: -60%;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+.slider-3d-buttons .fa-chevron-right{
+    position: absolute;
+    right: -60%;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+
+/* 3D Slider End */
+
+
 }
 
 @media screen and (max-width: 320px) {
@@ -3565,4 +3696,87 @@ footer{
      color: var(--para-color);
      font-size: 12px !important;
 }
+
+/* 3D Slider Start*/
+.myPanels{
+    width: 165px;
+    height: 250px;
+    position: relative;
+    perspective: 1500px;
+  }
+  #carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 10000px;
+  
+  }
+  #carousel .pane{
+    margin: 0px;
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 290px;
+    left: 10px;
+    top: 10px;
+    border-radius: 30px;
+  }
+  /* Custom Changes */
+.slider-3D-card{
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+.slider-3D-img{
+    background-size: 65%;
+    transform: translateY(30px);
+    height: 100px;
+}
+.slider-3D-img img{
+    width: 40%;
+    margin: 15px;
+}
+.slider-3D-text{
+    padding: 30px 10px 10px 10px;
+    gap: 10px;
+}
+.slider-3D-text h1{
+    font-size: 13px;
+    line-height: 16px;
+}
+.slider-3D-text p{
+    font-size: 9px;
+    padding: 0 5px;
+}
+
+.learn-circle{
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.25);
+    margin: 0px 10px ;
+}
+.learn-circle img{
+    width: 10%;
+    padding: 8px 4px 0px 4px;
+}
+
+.slider-3d-buttons{
+    position: relative;
+    margin-top: -100px;
+}
+.slider-3d-buttons .fa-chevron-left{
+    position: absolute;
+    left: -40%;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+.slider-3d-buttons .fa-chevron-right{
+    position: absolute;
+    right: -40%;
+    padding: 10px 12px;
+    font-size: 22px;
+}
+
+/* 3D Slider End */
 }

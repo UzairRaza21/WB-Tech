@@ -726,8 +726,8 @@ a{
 }
  
 .myPanels{
-    width: 210px;
-    height: 140px;
+    width: 250px;
+    height: 250px;
     position: relative;
     perspective: 1000px;
   }
@@ -759,10 +759,6 @@ a{
   .pane{
     text-align: center;
     cursor: pointer;
-  }
-  
-  .buttons{
-    margin-top: 60px;
   }
   
   /* Custom Changes */
@@ -820,8 +816,30 @@ a{
 .slider-3D-text h2{
     font-size: 14px;
 }
-
-
+.slider-3d-buttons{
+    position: relative;
+    cursor: pointer;
+    color: var(--heading-color);
+    margin-top: -60px;
+}
+.slider-3d-buttons .fa-chevron-left{
+    position: absolute;
+    left: -55%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 23px 33px 0px rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+}
+.slider-3d-buttons .fa-chevron-right{
+    position: absolute;
+    right: -55%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 23px 33px 0px rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+}
 
 
 /* Our Process Slider*/
@@ -991,100 +1009,126 @@ a{
 }
 
 /* Testimonial Slider  CSS Start*/
-
-.testimonail-slider{
-    display: grid;
-    place-items: center;
-    position: relative;
-    padding-top: 200px;
-}
-
-
-.testimonail-slider .swiper-container {
-    border-radius: 5px;
-    width: 70vw;
-    overflow: hidden;
-    height: 500px;
-    font-size: 50px;
-    position: relative;
-    padding-bottom: 50px;
-    font-family: sans-serif;
+.dash-ads-slider{
+    padding-top: 250px;
+  }
+  .slick-slider {
+    margin: auto;
+    width: 50%;
+  }
+  .slick-slide{
+    height: 400px !important;
+    margin-inline: 10px;
+  }
+  .slick-arrow{
+    display: none !important;
+  }
+  .slick-slider img {
+    width: 100%;
+  }
+  .slick-slider .slick-dots li button {
+    background-color: white ;
+    border-radius: 50%;
+    border: 3px solid var(--heading-color);
+  }
+  .slick-slider .slick-dots li button::before {
+    display: none;
+  }
+  .slick-slider .slick-dots li.slick-active button {
+    background: var(--heading-color);
+    border-radius: 50%;
+  }
+  .actions {
+    margin-bottom: auto;
+  }
+  .actions .button {
+    margin: 10px;
+    width: 100%;
+  }
+  @media (min-width: 769px) {
+    .actions .button {
+      width: auto;
+    }
   }
   
-  .testimonail-slider .swiper-slide {
-    width: auto;
-    height: 400px;
-    display: flex;
-    height: auto;
-    border-radius: 20px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    font-family: var(--manrope-font-family);
-    background-color: white;
-    border: 1px solid var(--heading-color);
+  /* Dots */
+  .slick-dotted .slick-slider {
+    margin-bottom: 30px;
   }
-  
-  .testimonail-slider .swiper-pagination-bullet {
-    background-color: white;
-    opacity: 1;
-    border: 1px solid var(--heading-color);
-  }
-  
-  .testimonail-slider .swiper-pagination-bullet-active {
-    background-color: #4361ee;
-  }
-  
-  .testimonail-slider .swiper-button {
-    border: 1px solid white;
-  }
-  
-  .testimonail-slider .swiper-slide h3 {
-    font-size: 1.1rem;
+  .slick-dots {
+    list-style: none;
+    display: block;
     text-align: center;
-    font-weight: bold;
+    padding: 0;
+    margin: 0 0 20px;
+    width: 100%;
   }
-  
-  .testimonail-slider .swiper-slide p {
-    font-size: 0.9rem;
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+  }
+  .slick-dots li button {
+    border: 0;
+    background: transparent;
+    display: block;
+    height: 20px;
+    width: 20px;
+    outline: none;
+    line-height: 0px;
+    font-size: 0px;
+    color: transparent;
     padding: 5px;
+    cursor: pointer;
+  }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    outline: none;
+  }
+  .slick-dots li button:hover:before,
+  .slick-dots li button:focus:before {
+    opacity: 1;
+  }
+  .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "•";
+    width: 20px;
+    height: 20px;
+    font-family: "slick";
+    font-size: 6px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    opacity: 0.25;
+  
+  }
+  .slick-dots li.slick-active button:before {
+    color: black;
+    opacity: 0.75;
   }
   
-  @media (max-width:638px) {
-   .testimonail-slider .swiper-container {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width:500px) {
-   .testimonail-slider .swiper-container {
-      width: 70vw;
-    }
-  }
-  
-  @media (max-width:300px) {
-   .testimonail-slider .swiper-container {
-      width: 100%;
-    }
-  
-   .testimonail-slider .swiper-slide {
-      border-radius: 0px;
-    }
-  
-   .testimonail-slider .swiper-container .ImgHolder {
-      border-radius: 0px;
-    }
-   .testimonail-slider .ContentHolder{
-      border-radius: 0px;
-    }
-  }
+.wb-tech-testimonial-slide{
+    border: 1px solid var(--heading-color);
+    border-radius: 20px;
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
 
-
-
-
-
+}
+.wb-tech-testimonial-slide h2{
+    color: var(--heading-color);
+    font-weight: 400;
+}
+.wb-tech-testimonial-slide p{
+    font-size: 14px;
+    margin-top: 20px;
+}
 
 
 
