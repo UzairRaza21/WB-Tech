@@ -207,7 +207,8 @@
 }
 
 .wbtech-two-slides-slider h2{
-    font-size: var(--main-font-size-1024px) !important;
+    font-size: var(--main-font-size-1440px) !important;
+    margin-left: 120px !important;
 }
 
 .porfolio-heading h2{
@@ -717,7 +718,7 @@
     height: 105vh !important;
 }
 .portfolio-page-carts{
-    margin: -200px 50px 0px 50px !important;
+    margin: -200px 50px 40px 50px !important;
     gap: 0px !important;
 }
 .porfolio-bg {
@@ -804,6 +805,7 @@
     margin-top: -80px !important;
 }
 
+
 .service-webdev-section-3 {
     border-radius: 80px 80px 0 0 !important;
     margin-top: 0px !important;
@@ -817,7 +819,20 @@
     font-size: var(--main-font-size-1024px) !important;
     /* margin-left: 30px !important; */
 }
-
+.wbtech-two-slides-slider h2 {
+    font-size: var(--main-font-size-1024px) !important;
+    margin-left: 60px !important;
+}
+.wbtech-two-slides-slider-main .prev-btn {
+    left: 2% !important;
+}
+.wbtech-two-slides-slider-main .next-btn {
+    right: 2% !important;
+}
+.graphic-web-cart {
+    height: 300px !important;
+    margin-inline: 15px !important;
+}
 /* Services Page */
 
 
@@ -829,7 +844,7 @@
 /* Web Development Page */
 
 .portfolio-linkpage-header-bg {
-    height: 70vh !important;
+    height: 80vh !important;
 }
 
 .websites-developement-heading span{
@@ -1586,6 +1601,9 @@ footer{
 }
 
 /* Graphic Designing Page */
+.portfolio-linkpage-heading h2 {
+    font-size: 40px !important;
+}
 .owl-card-slider h2 {
     font-size: var(--main-font-size-768px) !important;
     margin-left: auto !important;
@@ -1604,6 +1622,13 @@ footer{
 
 .owl-card-slider-section-graphic-porfolio{
     margin-top: -80px !important;
+}
+.graphic-web-cart {
+    height: 260px !important;
+    margin-inline: 15px !important;
+}
+.search-form-input {
+    width: 300px !important;
 }
 /* Two img slider */
 .wbtech-two-slides-slider-main {
@@ -2659,6 +2684,13 @@ footer{
 
 .portfolio-page-carts {
     margin: -260px auto 100px auto !important;
+}
+.graphic-web-cart {
+    height: 370px !important;
+    margin-inline: 15px !important;
+}
+.website-cart {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25) !important;
 }
 
 /* Two img slider */
