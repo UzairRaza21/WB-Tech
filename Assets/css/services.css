@@ -40,7 +40,7 @@
 }
 
 .services-page-carts {
-    margin: -255px auto 0px auto;
+    margin: -224px auto 0px auto;
 }
 
 
@@ -180,7 +180,6 @@
 }
 .service-graphic-cart{
     margin-top: -200px;
-    overflow: hidden;
     width: 270px;
     height: 400px;
 }

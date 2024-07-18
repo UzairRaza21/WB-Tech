@@ -377,7 +377,9 @@
     font-weight: 400;
     color: var(--heading-color);
 }
-
+.packages-carts {
+    margin-top: -190px;
+}
 /* Services SEO */
 .service-seo-cart h3 {
     font-size: 20px !important;
@@ -747,7 +749,7 @@
     width: 90% !important;
 }
 .services-page-carts {
-    margin: -260px auto 0px auto !important;
+    margin: -190px auto 0px auto !important;
 }
 .services-header-bg {
     height: 100vh !important;
@@ -1711,7 +1713,7 @@ footer{
 /* Packages -Web Developement Page */
 
 .packages-carts{
-    margin-top: -305px !important;
+    margin-top: -205px !important;
 }
 .packages-linkpage-section-2-carts{
     gap: 100px !important;
@@ -1803,7 +1805,7 @@ footer{
 /* Serives WEB Developement */
 
 .services-page-carts {
-    margin: -305px auto 0px auto !important;
+    margin: -205px auto 0px auto !important;
 }
 .service-webdev-section-2{
     height: auto !important;
@@ -2723,7 +2725,7 @@ footer{
 /* Services Page */
 
 .services-page-carts {
-    margin: -365px auto 0px auto !important;
+    margin: -267px auto 0px auto !important;
 }
 
 
@@ -2745,7 +2747,7 @@ footer{
 
 /* Packages -Web Developement Page */
 .packages-carts {
-    margin-top: -365px !important;
+    margin-top: -265px !important;
 }
 .packages-linkpage-section-2-carts{
     gap: 100px !important;
@@ -2952,6 +2954,7 @@ footer{
 .services-graphic-section-6-img{
     flex-basis: 50%;
     padding-top: 100px;
+    margin-left: 50px;
 }
 .services-graphic-section-6-text h2{
     font-size: var(--main-font-size-425px) !important;
@@ -3241,7 +3244,7 @@ footer{
 }
 /* Packages Page Hero */
 .packages-carts {
-    margin-top: -350px !important;
+    margin-top: -250px !important;
 }
 .packages-heading{
     margin-left: 60px;
@@ -3268,6 +3271,9 @@ footer{
 .service-graphic-cart {
     width: 275px !important;
     height: 315px !important;
+}
+.services-page-carts {
+    margin: -250px auto 0px auto !important;
 }
 /* Contact Hero Heading */
 .contact-heading{
@@ -3330,7 +3336,7 @@ footer{
     text-align: center;
 }
 .service-webdev-button {
-    width: 35% !important;
+    width: 50% !important;
     margin: 50px auto !important;
 }
 .service-animation-section-3 {
@@ -3662,7 +3668,7 @@ footer{
 
     /* Packages -Web Developement Page */
 .packages-carts {
-    margin-top: -325px !important;
+    margin-top: -225px !important;
 }
 .packages-linkpage-carts{
     width: 280px !important;
@@ -3712,8 +3718,14 @@ footer{
 .contact-header-bg {
     height: 60vh !important;
 }
+.services-header-bg {
+    height: 75vh !important;
+}
+.services-page-carts {
+    margin: -225px auto 0px auto !important;
+}
 .service-webdev-button {
-    width: 45% !important;
+    width: 53% !important;
 }
 
 .services-seo-section-3 h2{
