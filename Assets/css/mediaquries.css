@@ -172,7 +172,13 @@
     padding: 10px 30px;
     font-size: 28px;
 }
-
+.working-process-slider .slide-img img {
+    width: 85%;
+    position: absolute;
+    height: 80%;
+    right: 0%;
+    top: 10%;
+}
 /* About Page  */
 .about-section-2-slide-text h2 {
     font-size: var(--main-font-size-1440px) !important;
@@ -2423,7 +2429,7 @@ footer{
 
 /* Working Process */
 .working-process-heading{
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 30px;
 }
 .working-process-heading h1{
     transform: translateX(-18.5%);
@@ -2443,7 +2449,7 @@ footer{
 }
 .working-process-slider .slider {
     width: 100%;
-    height: 320px;
+    height: 270px;
     overflow: hidden;
 }
 .working-process-button{
@@ -2453,21 +2459,21 @@ footer{
 
 .working-process-slider .slide-img{
     width: 25%;
-    height: 300px;
+    height: 270px;
 }
 .working-process-slider .slide-img img {
     width: 100%;
     height: 50%;
     right: 0%;
-    top: 28%;
+    top: 25%;
 }
 
 .working-process-slider .slide-text{
     width: 75%;
-    padding: 60px 50px 50px 50px;
+    padding: 60px 30px 50px 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 .working-process-slider .slide-text h1{
     font-size: 22px;
@@ -3307,6 +3313,10 @@ footer{
     padding: 40px 20px !important;
     text-align: center;
 }
+.working-process-heading h1 {
+    transform: translateX(-18.5%);
+    font-size: 22px;
+}
 .work-process-slide-text h1{
     font-weight: 400;
     font-size: 24px !important;
@@ -3314,6 +3324,25 @@ footer{
 .work-process-slide-text p{
      color: var(--para-color);
      font-size: 14px !important;
+}
+.working-process-slider .slide-text {
+    width: 75%;
+    padding: 60px 10px 0px 20px;
+    gap: 10px;
+}
+.working-process-slider .slider {
+    width: 100%;
+    height: 265px;
+}
+.working-process-slider .slide-img {
+    width: 25%;
+    height: 265px;
+}
+.working-process-slider .slide-img img {
+    width: 100%;
+    height: 50%;
+    right: 0%;
+    top: 20%;
 }
 
 /* 3D Slider Start*/
@@ -3478,14 +3507,16 @@ footer{
 }
 .working-process-slider .slider {
     width: 100%;
-    height: 230px;
+    height: 220px;
     overflow: hidden;
 }
 .working-process-button{
     width: 100%;
     height: 230px ;
 }
-
+.working-process-heading {
+    padding: 0px 0px 0px 0px;
+}
 .working-process-slider .slide-img{
     width: 25%;
     height: 200px;
@@ -3499,7 +3530,7 @@ footer{
 
 .working-process-slider .slide-text{
     width: 75%;
-    padding: 40px 10px 35px 30px;
+    padding: 40px 10px 35px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
