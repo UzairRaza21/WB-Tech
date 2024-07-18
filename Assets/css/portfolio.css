@@ -19,9 +19,9 @@
 .portfolio-header-bg{
     background-color:  rgba(220, 229, 255, 1);
     background-size: 100% 60%;
-    height: 120vh ;
+    height: 115vh ;
 }
-
+ 
 .portfolio-hero{
     max-width: 95%;
     margin: 0 auto;
@@ -33,7 +33,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 85vh;
+    height: 80vh;
     border-radius: 30px;
     display: flex;
     justify-content: center;

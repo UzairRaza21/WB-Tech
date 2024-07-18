@@ -202,6 +202,9 @@
 }
 
 /* Portfolio Page */
+.porfolio-bg{
+    height: 75vh !important;
+}
 
 .wbtech-two-slides-slider h2{
     font-size: var(--main-font-size-1024px) !important;
@@ -711,13 +714,14 @@
 /* Portfolio Page Start */
 
 .portfolio-header-bg {
-    height: 100vh !important;
+    height: 105vh !important;
 }
 .portfolio-page-carts{
-    margin: -200px auto 100px auto !important;
+    margin: -200px 50px 0px 50px !important;
+    gap: 0px !important;
 }
 .porfolio-bg {
-    height: 70vh !important;
+    height: 65vh !important;
 }
 
 .porfolio-heading h2{
@@ -776,20 +780,16 @@
     width: 90% !important;
 }
 
-
-.portfolio-page-carts {
-    flex-direction: column;
-}
 .portfolio-cart-inner {
-    flex-direction: column-reverse !important;
-    gap: 40px;
+    flex-direction: column !important;
+    gap: 0px;
     align-items: center;
 }
 .portfolio-card-image img{
-    width: 100%;
+    width: 100% !important;
 }
 .porfolio-subheading h2 {
-    font-size: var(--main-font-size-1024px);
+    font-size: 20px;
 }
 
 .portfolio-linkpage-heading h2 {
@@ -1548,7 +1548,7 @@ footer{
 /* Portfolio Page Start */
 
 .porfolio-bg {
-    height: 60vh !important;
+    height: 50vh !important;
 }
 
 .porfolio-heading h2 {
@@ -1557,7 +1557,7 @@ footer{
 
 .portfolio-cart-inner {
     flex-direction: column-reverse !important;
-    gap: 40px;
+    gap: 10px !important;
 }
 
 /* Our Services Page Hero */
@@ -1574,11 +1574,15 @@ footer{
     height: 60vh;
 }
 .porfolio-subheading h2 {
-    font-size: var(--main-font-size-768px) !important;
+    font-size: 20px !important;
 }
-
+.portfolio-header-bg {
+    height: 90vh !important;
+}
 .portfolio-page-carts {
-    margin: -250px auto 100px auto !important;
+    margin: -220px auto 100px auto !important;
+    flex-direction: column;
+    gap: 20px !important;
 }
 
 /* Graphic Designing Page */
@@ -2587,7 +2591,7 @@ footer{
 }
 
 .portfolio-header-bg {
-    height: 650px !important;
+    height: 625px !important;
 }
 
 .porfolio-heading{
@@ -2650,11 +2654,11 @@ footer{
 }
 
 .porfolio-subheading h2 {
-    font-size: var(--main-font-size-425px) !important;
+    font-size: 20px !important;
 }
 
 .portfolio-page-carts {
-    margin: -230px auto 100px auto !important;
+    margin: -260px auto 100px auto !important;
 }
 
 /* Two img slider */
@@ -3177,7 +3181,9 @@ footer{
     font-size: 35px !important;
     text-align: center;
 }
-
+.portfolio-card-image img {
+    height: 50vh;
+}
 
 /* Two img slider */
 .wbtech-two-slides-slider-main {
@@ -3248,11 +3254,11 @@ footer{
 }
 
 .porfolio-subheading h2 {
-    font-size: var(--main-font-size-425px) !important;
+    font-size: 20px !important;
 }
 
 .portfolio-page-carts {
-    margin: -160px auto 100px auto !important;
+    margin: -195px auto 100px auto !important;
 }
 
 /* Packages -Web Developement Page */
@@ -3609,11 +3615,14 @@ footer{
     width: 50% !important;
 }
 .porfolio-subheading h2 {
-    font-size: 22px !important;
+    font-size: 20px !important;
 }
 
 .portfolio-page-carts {
-    margin: -150px auto 100px auto !important;
+    margin: -200px auto 100px auto !important;
+}
+.portfolio-card-image img {
+    height: 50vh;
 }
 .service-graphic-cart {
     height: 250px !important;
